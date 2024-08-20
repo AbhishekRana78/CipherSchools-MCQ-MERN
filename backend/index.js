@@ -12,7 +12,7 @@ dotenv.config({path: ".env"});
 const app = express();
 
 const corsOptions = {
-    origin:'http://localhost:3000',
+    origin:'https://cipher-schools-mcq-mern.vercel.app/',
     credentials:true
 }
 app.use(cors(corsOptions));
@@ -29,5 +29,5 @@ app.use("/api/v1/user", userRoute); // Prefix the userRoute with /api/v1
 const port = process.env.PORT || 8000; // Use uppercase for environment variable
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}/`);
+    console.log(`Server is running on`);
 });
