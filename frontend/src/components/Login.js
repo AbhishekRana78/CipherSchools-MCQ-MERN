@@ -40,7 +40,7 @@ const Login = () => {
                 dispatch(setUser(res.data.user));
                 navigate("/browse");
             } catch (error) {
-                toast.error(error.response.data.message);
+                toast.error(error?.response?.data?.message);
                 console.log(error);
             } finally {
                 dispatch(setLoading(false));
