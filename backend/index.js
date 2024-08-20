@@ -11,7 +11,7 @@ dotenv.config({path: ".env"});
 
 const app = express();
 
-const corsOption = {
+const corsOptions = {
     origin:"https://cipher-schools-mcq-mern.vercel.app/",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
